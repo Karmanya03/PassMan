@@ -1,0 +1,11 @@
+C:\Users\ACER\Documents\VSCFiles\PassMan\target\debug\deps\chacha20-d14a1a5fad8db1b4.d: C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\lib.rs C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\backends.rs C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\legacy.rs C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\xchacha.rs C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\backends\soft.rs C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\backends\avx2.rs C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\backends\sse2.rs
+
+C:\Users\ACER\Documents\VSCFiles\PassMan\target\debug\deps\libchacha20-d14a1a5fad8db1b4.rmeta: C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\lib.rs C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\backends.rs C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\legacy.rs C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\xchacha.rs C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\backends\soft.rs C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\backends\avx2.rs C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\backends\sse2.rs
+
+C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\lib.rs:
+C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\backends.rs:
+C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\legacy.rs:
+C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\xchacha.rs:
+C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\backends\soft.rs:
+C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\backends\avx2.rs:
+C:\Users\ACER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\chacha20-0.9.1\src\backends\sse2.rs:

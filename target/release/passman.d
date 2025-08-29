@@ -1,0 +1,1 @@
+C:\Users\ACER\Documents\VSCFiles\PassMan\target\release\passman.exe: C:\Users\ACER\Documents\VSCFiles\PassMan\src\crypto.rs C:\Users\ACER\Documents\VSCFiles\PassMan\src\entry.rs C:\Users\ACER\Documents\VSCFiles\PassMan\src\main.rs C:\Users\ACER\Documents\VSCFiles\PassMan\src\security.rs C:\Users\ACER\Documents\VSCFiles\PassMan\src\vault.rs
