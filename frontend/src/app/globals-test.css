@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Test to see if the duplication issue persists */
+.test-class {
+  color: red;
+}
