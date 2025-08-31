@@ -26,3 +26,5 @@ hex = "0.4.3"
 getrandom = "0.2"
 blake3 = "1.4"
 thiserror = "1.0"
+# SQLite with SQLCipher support
+rusqlite = { version = "0.29", features = ["bundled", "sqlcipher"] }

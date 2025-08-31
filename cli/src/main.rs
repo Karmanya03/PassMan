@@ -7,10 +7,13 @@ use passmann_shared::{
 };
 
 mod cloud;
+mod db;
+mod local_vault;
 
 use clap::{Parser, Subcommand, Args};
 use std::process;
 use std::io::{self, Write};
+use crate::local_vault::LocalVaultManager;
 
 #[derive(Parser)]
 #[command(name = "PassMann")]

@@ -65,6 +65,11 @@ Local Storage/
 Session Storage/
 IndexedDB/
 WebSQL/
+*.db-journal
+*.db-wal
+*.db-shm
+passman.db*
+vault_storage.db*
 
 # ==============================================================================
 # RUST BUILD ARTIFACTS
@@ -303,10 +308,15 @@ extension/*password*
 extension/*login*
 extension/*session*
 extension/*cookie*
-extension/*storage*
+extension/*storage-debug*
+extension/*storage-test*
+extension/storage/
 extension/*vault*
 extension/*encrypted*
 extension/*private*
+
+# Allow production storage manager
+!extension/storage-manager-sqlite.js
 
 # ==============================================================================
 # CRYPTOCURRENCY AND ENCRYPTION (ULTRA-CRITICAL)

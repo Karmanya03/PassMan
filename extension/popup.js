@@ -2,7 +2,7 @@ class PassMannApp {
   constructor() {
     this.wasm = null;
     this.wasmType = null; // Track whether we're using 'rust' or 'js' implementation
-    this.storageManager = new ExtensionStorageManager(this);
+    this.storageManager = new SQLiteLikeStorageManager(this);
     this.state = {
       isLocked: true,
       entries: [],
