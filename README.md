@@ -154,5 +154,3 @@ This extension was built with security-first design principles:
 - Secure sharing
 
 ---
-
-**🎉 Your PassMannn extension is ready to use! Enjoy secure password management with military-grade encryption.**
