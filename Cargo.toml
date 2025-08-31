@@ -1,7 +1,7 @@
 [workspace]
 members = [
     "cli",
-    "shared",
+    "shared", 
     "wasm"
 ]
 resolver = "2"
