@@ -1,0 +1,54 @@
+/* Additional GIF Background Options for PassMan Extension */
+
+/* To enable GIF backgrounds, add one of these classes to the body element via JavaScript */
+
+/* Option 1: Subtle geometric patterns */
+.bg-geometric {
+  background-image: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGxuOWJlMXNtZzIyM3B5ZWZ2c2w2MXJwcXY5aTJ6d3ZkZWV6bW51bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26BROrSHlmyzzHf3i/giphy.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Option 2: Minimalistic wave animation */
+.bg-waves {
+  background-image: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3dtNXIxMmJoZmlqendsZGM5dDIybGE0anJyZWFqdjNncng1MXI5ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l4FGp6wKxMULON88U/giphy.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Option 3: Particle flow */
+.bg-particles {
+  background-image: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHdrMTFjbGRmZTVudXNlZWNsOXo4amcxNXNidHRuMjR4bGkyc3Y2aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUPGcl3ijl0vAEyIDK/giphy.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Option 4: Digital rain effect (Matrix style) */
+.bg-matrix {
+  background-image: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExczFsMmtqcGo4dGNlNzY3Y2Vrc3Z6YXk2YmdiYzFuc3IxdHYzOGoyOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/sULKEgDMX8LcI/giphy.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Option 5: Abstract fluid motion */
+.bg-fluid {
+  background-image: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWc4azE4cG03M2huZGZyaTBxNjVyZGl4bWpldXJydGVnd2F1bzU5biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oKIPf3C7HqqYBVcCk/giphy.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Default solid background (fallback) */
+.bg-solid {
+  background: linear-gradient(135deg, #f6f9fc 0%, #ffffff 100%);
+}
+
+/* Usage Instructions:
+   1. Add the desired class to the body element: document.body.className = 'bg-geometric';
+   2. Or toggle between backgrounds: document.body.classList.toggle('bg-particles');
+   3. For dynamic switching, use the theme buttons in the UI
+*/

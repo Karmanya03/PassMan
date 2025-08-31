@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PassMann</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <img src="passman1-1.PNG" alt="PassMann Logo" class="logo-image">
+        <span class="logo-text">PassMann</span>
+      </div>
+      <div class="subtitle">Secure Password Manager</div>
+    </div>
+    
+    <!-- 3D Cube Animation - Only visible on lock screen -->
+    <div class="cube-animation-container" id="cube-animation">
+      <div class="cube">
+        <div style="--x:-1; --y:0;">
+          <span style="--i:3;"></span>
+          <span style="--i:2;"></span>
+          <span style="--i:1;"></span>
+        </div>
+        <div style="--x:0; --y:0;">
+          <span style="--i:3;"></span>
+          <span style="--i:2;"></span>
+          <span style="--i:1;"></span>
+        </div>
+        <div style="--x:1; --y:0;">
+          <span style="--i:3;"></span>
+          <span style="--i:2;"></span>
+          <span style="--i:1;"></span>
+        </div>
+      </div>
+      <div class="cube">
+        <div style="--x:-1; --y:0;">
+          <span style="--i:3;"></span>
+          <span style="--i:2;"></span>
+          <span style="--i:1;"></span>
+        </div>
+        <div style="--x:0; --y:0;">
+          <span style="--i:3;"></span>
+          <span style="--i:2;"></span>
+          <span style="--i:1;"></span>
+        </div>
+        <div style="--x:1; --y:0;">
+          <span style="--i:3;"></span>
+          <span style="--i:2;"></span>
+          <span style="--i:1;"></span>
+        </div>
+      </div>
+      <div class="cube">
+        <div style="--x:-1; --y:0;">
+          <span style="--i:3;"></span>
+          <span style="--i:2;"></span>
+          <span style="--i:1;"></span>
+        </div>
+        <div style="--x:0; --y:0;">
+          <span style="--i:3;"></span>
+          <span style="--i:2;"></span>
+          <span style="--i:1;"></span>
+        </div>
+        <div style="--x:1; --y:0;">
+          <span style="--i:3;"></span>
+          <span style="--i:2;"></span>
+          <span style="--i:1;"></span>
+        </div>
+      </div>
+    </div>
+    
+    <div id="app"></div>
+  </div>
+
+  <script src="crypto-fallback.js"></script>
+  <script src="storage-manager.js"></script>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

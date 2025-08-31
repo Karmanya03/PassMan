@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "PassMann - Secure Password Manager",
+  "version": "1.0.0",
+  "description": "Military-grade password manager with modern UI",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "alarms"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PassMann",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["wasm/*", "wasm/passmann_wasm.js", "wasm/passmann_wasm_bg.wasm", "BG1.jpg", "BG2.jpg", "background.gif", "passman1-1.PNG"],
+      "matches": ["<all_urls>"],
+      "use_dynamic_url": false
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

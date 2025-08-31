@@ -1,0 +1,17 @@
+{
+  "name": "passmann-extension",
+  "version": "1.0.0",
+  "description": "PassMann Browser Extension",
+  "scripts": {
+    "build": "npm run build:wasm && npm run build:extension",
+    "build:wasm": "cd wasm && wasm-pack build --target web --out-dir ../extension/wasm",
+    "build:extension": "echo 'Extension build complete'",
+    "dev": "npm run build && npm run serve",
+    "serve": "cd extension && python -m http.server 8000",
+    "clean": "rm -rf extension/wasm && rm -rf wasm/pkg"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.246",
+    "typescript": "^5.0.0"
+  }
+}

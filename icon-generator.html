@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Icon Generator</title>
+</head>
+<body>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <script>
+        function generateIcon(size) {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Set canvas size
+            canvas.width = size;
+            canvas.height = size;
+            
+            // Blue background
+            ctx.fillStyle = '#3B82F6';
+            ctx.fillRect(0, 0, size, size);
+            
+            // Draw lock icon (simplified)
+            const scale = size / 24;
+            ctx.strokeStyle = 'white';
+            ctx.fillStyle = 'white';
+            ctx.lineWidth = 2 * scale;
+            
+            // Lock body
+            const lockWidth = 10 * scale;
+            const lockHeight = 8 * scale;
+            const lockX = (size - lockWidth) / 2;
+            const lockY = size / 2;
+            
+            ctx.fillRect(lockX, lockY, lockWidth, lockHeight);
+            
+            // Lock shackle
+            ctx.beginPath();
+            ctx.arc(size / 2, lockY - 2 * scale, 4 * scale, Math.PI, 0, false);
+            ctx.stroke();
+            
+            // Download the image
+            canvas.toBlob(blob => {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `icon${size}.png`;
+                a.click();
+                URL.revokeObjectURL(url);
+            });
+        }
+        
+        // Generate all icon sizes
+        [16, 32, 48, 128].forEach(size => {
+            setTimeout(() => generateIcon(size), size * 10);
+        });
+    </script>
+</body>
+</html>

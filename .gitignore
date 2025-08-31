@@ -1,1 +1,726 @@
-target
+# Gitignore for PassMan
+*master*
+*password*
+*passw*
+*passwd*
+*pwd*
+*pass*
+*key*
+*secret*
+*token*
+*auth*
+*credential*
+*private*
+*priv*
+*confidential*
+*sensitive*
+*security*
+*login*
+*signin*
+*signup*
+*account*
+*user*
+*admin*
+*root*
+*super*
+
+# Encryption artifacts (CRITICAL)
+*encrypted*
+*decrypted*
+*cipher*
+*crypto*
+*hash*
+*salt*
+*nonce*
+*iv*
+*vault*
+*secure*
+*aes*
+*rsa*
+*dsa*
+*ecdsa*
+*ed25519*
+*pbkdf2*
+*scrypt*
+*argon*
+*bcrypt*
+*sha*
+*md5*
+*hmac*
+*signature*
+*signed*
+
+# User data and vault files (CRITICAL)
+*.vault
+*.db
+*.sqlite
+*.sqlite3
+*.s3db
+user_data/
+vault_data/
+passwords/
+entries/
+storage/
+Local Storage/
+Session Storage/
+IndexedDB/
+WebSQL/
+
+# ==============================================================================
+# RUST BUILD ARTIFACTS
+# ==============================================================================
+/target/
+wasm/target/
+**/*.rs.bk
+Cargo.lock
+
+# ==============================================================================
+# WASM BUILD ARTIFACTS  
+# ==============================================================================
+wasm/pkg/
+wasm/node_modules/
+extension/wasm/package.json
+extension/wasm/.gitignore
+
+# ==============================================================================
+# NODE.JS DEPENDENCIES
+# ==============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# ==============================================================================
+# EXTENSION BUILD ARTIFACTS
+# ==============================================================================
+extension/dist/
+extension/*.zip
+extension/*.crx
+extension/*.xpi
+extension/build/
+
+# ==============================================================================
+# ENVIRONMENT VARIABLES AND SECRETS (ULTRA-CRITICAL)
+# ==============================================================================
+.env*
+*.env
+.env
+.env.local
+.env.development
+.env.staging
+.env.production
+.env.test
+.env.backup
+.env.orig
+.env.save
+.env.bak
+environment.*
+config.*
+secrets.*
+settings.*
+*.key
+*.pem
+*.p12
+*.crt
+*.cer
+*.der
+*.pfx
+*.jks
+*.keystore
+*config.json
+*settings.json
+*secrets.json
+*credentials.json
+*auth.json
+*token.json
+*api.json
+
+# ==============================================================================
+# DATABASE AND CLOUD SERVICES (CRITICAL)
+# ==============================================================================
+.supabase/
+supabase/
+firebase/
+aws/
+gcp/
+azure/
+*.service-account.json
+*-key.json
+*-config.json
+*-credentials.json
+
+# ==============================================================================
+# IDE/EDITOR FILES
+# ==============================================================================
+.vscode/settings.json
+.vscode/launch.json  
+.vscode/tasks.json
+.vscode/*.json
+.idea/
+*.code-workspace
+*.sublime-*
+*.swp
+*.swo
+*~
+
+# ==============================================================================
+# OS-SPECIFIC FILES
+# ==============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==============================================================================
+# TEMPORARY AND LOG FILES
+# ==============================================================================
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*~
+.#*
+#*#
+
+# ==============================================================================
+# ULTRA-SENSITIVE DATA PATTERNS (CRITICAL SECURITY)
+# ==============================================================================
+
+# Any file containing these keywords (NEVER COMMIT)
+*admin*
+*root*
+*superuser*
+*sudo*
+*login*
+*signin*
+*session*
+*cookie*
+*jwt*
+*bearer*
+*oauth*
+*api_key*
+*access_key*
+*secret_key*
+*private_key*
+*public_key*
+*ssh_key*
+*ssl*
+*tls*
+*certificate*
+
+# Specific sensitive file patterns
+*.pkey
+*.ppk
+*.openssh
+*.rsa
+*.dsa
+*.ecdsa
+*.ed25519
+*_rsa
+*_dsa
+*_ecdsa
+*_ed25519
+*authorized_keys*
+*known_hosts*
+*identity*
+
+# ==============================================================================
+# CHROME EXTENSION SECURITY (ULTRA-CRITICAL)
+# ==============================================================================
+
+# Extension user data and local storage (NEVER COMMIT)
+extension/storage/
+extension/_locales/
+extension/user_data/
+extension/Local Storage/
+extension/Session Storage/
+extension/IndexedDB/
+extension/WebSQL/
+extension/Cache/
+extension/Application Cache/
+extension/Service Worker/
+extension/Background Pages/
+extension/Preferences/
+extension/Extensions/
+extension/History/
+extension/Downloads/
+extension/Bookmarks/
+extension/Cookies/
+extension/Passwords/
+extension/Autofill/
+extension/Sync Data/
+
+# Extension debugging and development files (ULTRA-CRITICAL)
+extension/debug/
+extension/test_data/
+extension/sample_data/
+extension/mock_data/
+extension/dev_*
+extension/*_test.*
+extension/*_debug.*
+extension/*_local.*
+extension/*_temp.*
+extension/*_tmp.*
+extension/*_dev.*
+extension/*_development.*
+extension/*_staging.*
+extension/console_*
+extension/error_*
+extension/crash_*
+extension/dump_*
+
+# Chrome extension store artifacts (CRITICAL)
+extension/*.zip
+extension/*.crx
+extension/*.xpi
+extension/*.nex
+extension/manifest_*
+extension/updates.xml
+extension/store_assets/
+extension/screenshots/
+extension/promotional/
+extension/release/
+extension/dist/
+extension/build/
+extension/packed/
+
+# Extension security files (ULTRA-CRITICAL)
+extension/*key*
+extension/*secret*
+extension/*token*
+extension/*auth*
+extension/*credential*
+extension/*password*
+extension/*login*
+extension/*session*
+extension/*cookie*
+extension/*storage*
+extension/*vault*
+extension/*encrypted*
+extension/*private*
+
+# ==============================================================================
+# CRYPTOCURRENCY AND ENCRYPTION (ULTRA-CRITICAL)
+# ==============================================================================
+
+# Wallet and crypto files (NEVER COMMIT)
+*wallet*
+*mnemonic*
+*seed*
+*phrase*
+*recovery*
+*backup*
+*keystore*
+*utc*
+*geth*
+*ethereum*
+*bitcoin*
+*crypto*
+*blockchain*
+
+# Encryption keys and certificates
+*.asc
+*.gpg
+*.pgp
+*.sig
+*.p7s
+*.p7m
+*.p7c
+*.p7b
+*.spc
+*.pvk
+*.der
+*.crt
+*.cer
+*.ca-bundle
+*.ca-cert
+*.ca-key
+*.client-cert
+*.client-key
+*.server-cert
+*.server-key
+
+# ==============================================================================
+# DATABASE AND VAULT FILES (ULTRA-CRITICAL)
+# ==============================================================================
+
+# Database files
+*.mdb
+*.accdb
+*.frm
+*.ibd
+*.myd
+*.myi
+*.dbf
+*.fdb
+*.gdb
+*.ldb
+*.nsf
+*.ntf
+*.ora
+*.pst
+*.wdb
+
+# Backup and dump files
+*.dump
+*.backup
+*.bak.db
+*.old.db
+*.sql.gz
+*.sql.bz2
+*.sql.xz
+backup/
+backups/
+dumps/
+exports/
+imports/
+
+# ==============================================================================
+# DEVELOPMENT AND TESTING SECURITY (ULTRA-CRITICAL)
+# ==============================================================================
+
+# Test files with sensitive data
+test*
+Test*
+TEST*
+*test*
+*Test*
+*TEST*
+test_passwords.*
+test_vault.*
+test_users.*
+test_accounts.*
+test_keys.*
+test_secrets.*
+test_tokens.*
+test_auth.*
+test_login.*
+test_data.*
+sample_passwords.*
+sample_vault.*
+sample_users.*
+sample_accounts.*
+sample_keys.*
+sample_data.*
+demo_passwords.*
+demo_vault.*
+demo_users.*
+demo_accounts.*
+demo_keys.*
+demo_data.*
+mock_passwords.*
+mock_vault.*
+mock_users.*
+mock_accounts.*
+mock_keys.*
+mock_data.*
+*.test.db
+*.test.json
+*.test.txt
+*.test.sql
+*.test.csv
+*.test.xml
+*.test.yaml
+*.test.yml
+*_test_data.*
+*_sample_data.*
+*_demo_data.*
+*_mock_data.*
+*_testing.*
+*_development.*
+*_dev.*
+*_local.*
+*_temp.*
+*_tmp.*
+
+# Development debugging files (ULTRA-CRITICAL)
+debug*
+Debug*
+DEBUG*
+*debug*
+*Debug*
+*DEBUG*
+trace_*
+profile_*
+benchmark_*
+perf_*
+memory_*
+cpu_*
+network_*
+security_*
+audit_*
+*_debug.*
+*_trace.*
+*_profile.*
+*_benchmark.*
+*_perf.*
+*_memory.*
+*_cpu.*
+*_network.*
+*_security.*
+*_audit.*
+
+# ==============================================================================
+# CLOUD AND API SECURITY (CRITICAL)
+# ==============================================================================
+
+# Cloud service configurations (NEVER COMMIT)
+.aws/
+.gcp/
+.azure/
+.heroku/
+.netlify/
+.vercel/
+.firebase/
+.supabase/
+*-firebase-adminsdk-*
+*-service-account-*
+*-client-secret-*
+*-api-key-*
+
+# API and webhook secrets
+webhook_*
+api_*
+endpoint_*
+*_webhook.*
+*_api.*
+*_endpoint.*
+*_callback.*
+*_redirect.*
+
+# ==============================================================================
+# MILITARY-GRADE FILE EXTENSIONS (CRITICAL)
+# ==============================================================================
+
+# Executable and binary files that could contain secrets
+*.exe
+*.dll
+*.so
+*.dylib
+*.app
+*.pkg
+*.deb
+*.rpm
+*.msi
+*.dmg
+*.img
+*.iso
+*.bin
+*.dat
+*.raw
+
+# Archive files that might contain sensitive data
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.zip
+*.rar
+*.7z
+*.gz
+*.bz2
+*.xz
+*.lz
+*.lzma
+*.war
+*.jar
+
+# ==============================================================================
+# PYTHON SECURITY
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.coverage
+.tox/
+venv/
+env/
+ENV/
+
+# ==============================================================================
+# FINAL SECURITY MEASURES 
+# ==============================================================================
+
+# Any file starting with these prefixes
+SECRET_*
+PRIVATE_*
+CONFIDENTIAL_*
+INTERNAL_*
+RESTRICTED_*
+CLASSIFIED_*
+SENSITIVE_*
+SECURITY_*
+AUTH_*
+LOGIN_*
+PASSWORD_*
+KEY_*
+TOKEN_*
+CREDENTIAL_*
+ADMIN_*
+ROOT_*
+SUPER_*
+MASTER_*
+VAULT_*
+ENCRYPTED_*
+BACKUP_*
+TEMP_*
+TMP_*
+DEV_*
+DEBUG_*
+TEST_*
+
+# Any file ending with these suffixes
+*_SECRET
+*_PRIVATE
+*_CONFIDENTIAL
+*_INTERNAL
+*_RESTRICTED
+*_CLASSIFIED
+*_SENSITIVE
+*_SECURITY
+*_AUTH
+*_LOGIN
+*_PASSWORD
+*_KEY
+*_TOKEN
+*_CREDENTIAL
+*_ADMIN
+*_ROOT
+*_SUPER
+*_MASTER
+*_VAULT
+*_ENCRYPTED
+*_BACKUP
+*_TEMP
+*_TMP
+*_DEV
+*_DEBUG
+*_TEST
+
+# Case variations for maximum security
+*SECRET*
+*PRIVATE*
+*CONFIDENTIAL*
+*PASSWORD*
+*CREDENTIAL*
+*ENCRYPTED*
+
+# Build and deployment logs (CRITICAL)
+build.log
+deploy.log
+error.log
+security.log
+audit.log
+access.log
+auth.log
+login.log
+session.log
+*build*.log
+*deploy*.log
+*error*.log
+*security*.log
+*audit*.log
+*access*.log
+*auth*.log
+*login*.log
+*session*.log
+
+# Backup files with any extension (ULTRA-CRITICAL)
+*.backup
+*.bak
+*.old
+*.orig
+*.save
+*.copy
+*.clone
+*.duplicate
+*~backup
+*~bak
+*~old
+*~orig
+*~save
+backup.*
+bak.*
+old.*
+orig.*
+save.*
+
+
+# ==============================================================================
+
+# Catch any missed patterns (ULTRA-PARANOID)
+*supabase*
+*firebase*
+*mongodb*
+*postgres*
+*mysql*
+*redis*
+*elasticsearch*
+*cloudflare*
+*aws*
+*azure*
+*gcp*
+*google*
+*microsoft*
+*amazon*
+*oauth*
+*jwt*
+*bearer*
+*session*
+*cookie*
+*login*
+*signin*
+*signup*
+*register*
+*auth*
+*api*
+*endpoint*
+*webhook*
+*callback*
+*redirect*
+*url*
+
+# ANY file that might contain user data
+*user*
+*account*
+*profile*
+*person*
+*member*
+*customer*
+*client*
+*contact*
+*address*
+*phone*
+*email*
+*mail*
+
+# ANY file that might contain financial data
+*payment*
+*credit*
+*card*
+*bank*
+*account*
+*balance*
+*transaction*
+*invoice*
+*receipt*
+*billing*
+*financial*
+*money*
+*currency*
+*price*
+*cost*
+*fee*
+
+# ==============================================================================
+# ==============================================================================

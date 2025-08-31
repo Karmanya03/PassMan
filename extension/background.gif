@@ -1,0 +1,32 @@
+# 📁 **REPLACE THIS FILE WITH YOUR CUSTOM GIF**
+
+## 🎯 **Instructions:**
+
+1. **Find your GIF file** that you want to use as background
+2. **Rename it to:** `background.gif`
+3. **Replace this file** in the `extension` folder
+4. **Reload the extension** in Chrome
+
+## 📋 **Requirements:**
+
+- **File name:** Must be exactly `background.gif`
+- **Location:** `PassMan/extension/background.gif`
+- **Format:** `.gif` (animated GIF)
+- **Recommended size:** 380x600 pixels (or larger)
+- **File size:** Keep under 5MB for best performance
+
+## 🎨 **Tips for Best Results:**
+
+- **Use high contrast GIFs** for better text readability
+- **Avoid very bright colors** that might make text hard to read
+- **Test with your GIF** to ensure UI elements remain visible
+- **Darker/medium tone GIFs** work best with the current design
+
+## 🔄 **Current Status:**
+
+This is a placeholder file. Your custom GIF will replace this when you:
+1. Save your GIF as `background.gif`
+2. Put it in the `PassMan/extension/` folder
+3. Reload the extension
+
+The extension will automatically use your GIF as the background!
